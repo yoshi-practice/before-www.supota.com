@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100vw;
+  height: 150vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#202233), to(#508274));
+  background: -webkit-linear-gradient(#000000, #202233, #508274);
+  background: -o-linear-gradient(#000000, #202233, #508274);
+  background: linear-gradient(#000000, #202233, #508274);
+  color: white; }
+
+.logo {
+  height: 211px;
+  width: 154px;
+  margin: calc(50vh - 162px) 0 0 calc(50vw - 77px); }
+
+#loading {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; }
+  #loading-progress {
+    position: absolute;
+    top: calc(50vh + 80px);
+    left: calc(50vw - 77px);
+    width: 234px;
+    margin: 0 0 0 -40px; }
+  #loading-percent {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.25rem; }
+  #loading-gauge {
+    width: 0;
+    height: 5px;
+    background: #ffffff; }
+
+.hamburger {
+  position: fixed;
+  top: 40px;
+  left: 50px;
+  cursor: pointer;
+  height: 18px;
+  width: 32px; }
+  .hamburger span,
+  .hamburger span:before,
+  .hamburger span:after {
+    position: absolute;
+    height: 2px;
+    width: 32px;
+    border-radius: 3px;
+    background: #ffffff;
+    display: block;
+    content: ''; }
+  .hamburger span:before {
+    bottom: -10px; }
+  .hamburger span:after {
+    bottom: -20px; }
+  .hamburger p {
+    width: 55px;
+    text-align: center;
+    font-size: 0.75rem;
+    position: relative;
+    top: 35px;
+    left: -11.5px; }
+
+.container .copyright {
+  font-size: 0.75rem;
+  position: absolute;
+  top: 5rem;
+  right: -2rem;
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.container .sub-title {
+  font-size: 3rem;
+  text-align: center; }
+
+.container .scroll {
+  width: 50px;
+  position: absolute;
+  bottom: 45px;
+  left: calc(50vw - 25px);
+  text-align: center; }
+  .container .scroll-text {
+    font-size: 0.875rem;
+    margin-bottom: 18px; }

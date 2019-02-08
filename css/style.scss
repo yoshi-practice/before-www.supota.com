@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 150vh;
+    background: linear-gradient(#000000, #202233, #508274);
+    color: white;
+}
+
+.logo {
+    height: 211px;
+    width: 154px;
+    margin: calc(50vh - 162px) 0 0 calc(50vw - 77px);
+}
+
+#loading {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    &-progress {
+        position: absolute;
+        top: calc(50vh + 80px);
+        left: calc(50vw - 77px);
+        width: 234px;
+        margin: 0 0 0 -40px;
+    }
+    &-percent {
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 1.25rem;
+        &-text {
+        }
+    }
+    &-gauge {
+        width: 0;
+        height: 5px;
+        background: #ffffff;
+    }
+}
+
+.hamburger {
+    position: fixed;
+    top: 40px;
+    left: 50px;
+    cursor: pointer;
+    height: 18px;
+    width: 32px;
+    & span,
+    & span:before,
+    & span:after {
+        position: absolute;
+        height: 2px;
+        width: 32px;
+        border-radius: 3px;
+        background: #ffffff;
+        display: block;
+        content: '';
+    }
+    & span:before {
+        bottom: -10px;
+    }
+    & span:after {
+        bottom: -20px;
+    }
+    p {
+        width: 55px;
+        text-align: center;
+        font-size: 0.75rem;
+        position: relative;
+        top: 35px;
+        left: -11.5px;
+    }
+}
+
+
+.container {
+    .copyright {
+        font-size: 0.75rem;
+        position: absolute;
+        top: 5rem;
+        right: -2rem;
+        display  : inline-block;
+        transform: rotate(90deg);
+    }
+    .sub-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .scroll {
+        width: 50px;
+        position: absolute;
+        bottom: 45px;
+        left: calc(50vw - 25px);
+        text-align: center;
+        &-text {
+            font-size: 0.875rem;
+            margin-bottom: 18px;
+        }
+        &-arrow {
+
+        }
+    }
+}
