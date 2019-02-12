@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*------
+　矢印
+------*/
+.arrow3 {
+  width: 10px; }
+
+.arrow3::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 50px;
+  background: #fff; }
+
+.arrow3::after {
+  content: "";
+  display: block;
+  border-top: 12px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; }
+
+/*------
+snsボタン
+------*/
+.button {
+  cursor: pointer;
+  min-width: 150px;
+  max-width: 250px;
+  display: block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale; }
+  .button:focus {
+    outline: none; }
+  .button > span {
+    vertical-align: middle; }
+  .button--round-l {
+    border-radius: 40px; }
+  .button.button--sacnite {
+    width: 70px;
+    height: 70px;
+    min-width: 0;
+    padding: 0;
+    color: #fff;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s; }
+  .button--sacnite.button--inverted {
+    color: #1DA1F2; }
+  .button--sacnite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: -1;
+    -webkit-box-shadow: inset 0 0 0 35px #1DA1F2;
+    box-shadow: inset 0 0 0 35px #1DA1F2;
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.9, 0.9, 1);
+    -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3;
+    -webkit-transition: -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    -o-transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s; }
+  .button--sacnite.button--inverted::before {
+    -webkit-box-shadow: inset 0 0 0 35px #fff;
+    box-shadow: inset 0 0 0 35px #fff; }
+  .button--sacnite .button__icon {
+    font-size: 22px;
+    width: 22px; }
+  .button--sacnite > span {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none; }
+  .button--sacnite:hover {
+    color: #1DA1F2; }
+  .button--sacnite.button--inverted:hover {
+    color: #fff; }
+  .button--sacnite:hover::before {
+    -webkit-box-shadow: inset 0 0 0 2px #1DA1F2;
+    box-shadow: inset 0 0 0 2px #1DA1F2;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  .button--sacnite.button--inverted:hover::before {
+    -webkit-box-shadow: inset 0 0 0 2px #fff;
+    box-shadow: inset 0 0 0 2px #fff; }
+
+.bg-2 .button {
+  color: #ECEFF1;
+  border-color: #ECEFF1; }
+
+/*------
+view more
+------*/
+.btn {
+  width: 140px;
+  height: 50px;
+  border: 1px solid #53546e;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  float: left;
+  position: relative; }
+  .btn-back {
+    width: 210px;
+    height: 500px;
+    position: absolute;
+    top: -50px;
+    left: -190px;
+    background: #53546e;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotateZ(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotateZ(-20deg);
+    z-index: 1; }
+  .btn a {
+    font-size: 1rem;
+    color: #53546e;
+    line-height: 50px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 2;
+    position: relative; }
+  .btn:hover .btn-back {
+    left: 50px; }
+  .btn:hover a {
+    color: #fff; }

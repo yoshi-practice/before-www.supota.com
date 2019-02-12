@@ -2,14 +2,16 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Title</title>
     <script src="js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/object.css">
 </head>
 <body>
-
+<!--
 <div id="loading">
     <img class="logo" src="img/logo.png" alt="">
     <div id="loading-progress">
@@ -17,24 +19,150 @@
         <div id="loading-gauge"></div>
     </div>
 </div>
-
+-->
 <div class="hamburger">
     <span></span>
     <p>MENU</p>
 </div>
 
-<div class="container">
-    <div>
-        <p class="copyright">©︎ 2019 SUPOTA Inc.</p>
-        <img class="logo" src="img/logo.png" alt="">
-        <p class="sub-title">Innovation in sports</p>
-        <div class="scroll">
-            <p class="scroll-text">SCROLL</p>
-            <img class="scroll-aroow" src="img/scroll-arrow.png" height="54" width="8"/>
-        </div>
+<div class="line-content">
+    <div id="lines">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
     </div>
 </div>
 
+<div class="main-container">
+    <p class="copyright">©︎ 2019 SUPOTA Inc.</p>
+    <img class="logo" src="img/logo.png" alt="">
+    <p class="sub-title">Innovation in sports</p>
+    <div class="scroll">
+        <p class="scroll-text">SCROLL</p>
+        <div class="arrow3 scroll-arrow"></div>
+    </div>
+</div>
+
+<!--
+<ul class="footer-fixed">
+    <li>Vision</li>
+    <li>Products</li>
+    <li>Member</li>
+    <li>Contact</li>
+</ul>
+-->
+<div class="sub">
+    <div class="section-ttl">Vision</div>
+    <div class="sub-container">
+        <div class="sub-container-text">
+            <h1 class="ttl">
+                <p>全てのアスリートが<br>本気でスポーツに取り組める社会へ。</p>
+            </h1>
+            <p class="description">
+                私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。
+            </p>
+            <div class="btn">
+                <div class="btn-back"></div>
+                <a href="#">View more</a>
+            </div>
+        </div>
+
+        <div class="sub-container-content"></div>
+    </div>
+</div>
+
+<div class="sub">
+    <div class="section-ttl">Services</div>
+    <div class="sub-container flex-reverse">
+        <div class="sub-container-text">
+            <h1 class="ttl">
+                <p>トークンエコノミーを利用した<br>アスリートを応援する事ができるSNS</p>
+            </h1>
+            <p class="description">
+                私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。
+            </p>
+            <div class="btn">
+                <div class="btn-back"></div>
+                <a href="#">View more</a>
+            </div>
+        </div>
+
+        <div class="sub-container-content"></div>
+    </div>
+</div>
+
+<div class="sub">
+    <div class="section-ttl">Member</div>
+    <div class="sub-container">
+        <ul class="member">
+            <li>
+                <div><img src="img/yumapaisen.jpg"/></div>
+                <h1>yuma kawai</h1>
+                <p>世界初kawaiiCEO！世界初kawaiiCEO！世界初kawaiiCEO！世界初kawaiiCEO！</p>
+            </li>
+            <li>
+                <div><img src="img/yumapaisen.jpg"/></div>
+                <h1>yoshi 1125</h1>
+                <p>COOooooooooooooooooooooooo</p>
+            </li>
+            <li>
+                <div><img src="img/yumapaisen.jpg"/></div>
+                <h1>mako shimi</h1>
+                <p>CMOooooooooooooooooooooooo</p>
+            </li>
+            <li>
+                <div><img src="img/yumapaisen.jpg"/></div>
+                <h1>issui ikeda</h1>
+                <p>CTOooooooooooooooooooooooo</p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="sub">
+    <div class="section-ttl">Contact</div>
+    <div class="sub-container">
+        <div class="sub-container-text">
+            <h1 class="ttl">
+                <p>トークンエコノミーを利用した<br>アスリートを応援する事ができるSNS</p>
+            </h1>
+            <p class="description">
+                私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。
+            </p>
+            <div class="btn">
+                <div class="btn-back"></div>
+                <a href="#">View more</a>
+            </div>
+        </div>
+
+        <div class="sub-container-content"></div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer-ttl">
+        <div class="footer-ttl-supota">
+            <img src="img/logo.png" alt="">
+            <h1>SUPOTA</h1>
+        </div>
+        <ul>
+            <li><p>〒530-0022</p></li>
+            <li><p>大阪市北区浪花町13-38 千代田ビル北館7階</p></li>
+            <li><p>TEL.06-6110-5301　FAX.06-6110-5302</p></li>
+        </ul>
+        <div class="container">
+            <section class="content">
+                <div class="box bg-2">
+                    <button class="button button--sacnite button--round-l"><i class="fab fa-twitter fa-2x"></i></button>
+                </div>
+            </section>
+        </div>
+    </div>
+</footer>
 
 <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
 
@@ -82,5 +210,6 @@
         }
     }, 40);
 </script>
+<script></script>
 </body>
 </html>
