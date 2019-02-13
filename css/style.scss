@@ -20,61 +20,20 @@ body {
 }
 
 
-
-
-#loading {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  &-progress {
-    position: absolute;
-    top: calc(50vh + 80px);
-    left: calc(50vw - 77px);
-    width: 234px;
-    margin: 0 0 0 -40px;
-  }
-  &-percent {
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 1.25rem;
-    &-text {
-    }
-  }
-  &-gauge {
-    width: 0;
-    height: 5px;
-    background: #ffffff;
-  }
-}
-
-.hamburger {
-  cursor: pointer;
+.header-back {
   z-index: 300;
-  position: fixed;
-  top: 30px;
-  left: 40px;
-  height: 22px;
-  /*p {
-    width: 55px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 0.75rem;
-    position: relative;
-    top: 35px;
-    left: -11.5px;
-  }*/
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100vw;
+  background-color: #12131d;
 }
 
 .main-container {
   position: relative;
   background-color: #12131d;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 70px);
   .logo {
     position: absolute;
     top: 0;
@@ -101,7 +60,7 @@ body {
   .scroll {
     width: 50px;
     position: absolute;
-    bottom: 45px;
+    bottom: 0;
     left: calc(50vw - 25px);
     text-align: center;
     &-text {
@@ -186,32 +145,6 @@ body {
     }
   }
 }
-
-.footer-fixed {
-  float: right;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  z-index: 3000;
-  top: 0;
-  padding: 5px;
-  margin: -40px 10px;
-  background-color: black;
-  li {
-    padding: 0 10px;
-    &:nth-child(4) {
-      color: #000;
-      background-color: aliceblue;
-    }
-    + li {
-      border-left: 1px solid aliceblue;
-    }
-  }
-}
-
-
-
-
 
 .footer {
   background-color: #12131d;

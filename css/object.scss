@@ -1,3 +1,33 @@
+#loading {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  &-progress {
+    position: absolute;
+    top: calc(50vh + 80px);
+    left: calc(50vw - 77px);
+    width: 234px;
+    margin: 0 0 0 -40px;
+  }
+  &-percent {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    &-text {
+    }
+  }
+  &-gauge {
+    width: 0;
+    height: 5px;
+    background: #ffffff;
+  }
+}
+
 /*------
 　矢印
 ------*/
@@ -9,7 +39,7 @@
   display: block;
   margin: 0 auto;
   width: 2px;
-  height: 50px;
+  height: 30px;
   background: #fff;
 }
 .arrow3::after{
@@ -167,12 +197,29 @@ view more
 
 
 
-
+.hamburger {
+  cursor: pointer;
+  z-index: 300;
+  position: fixed;
+  top: 25px;
+  left: 40px;
+  height: 22px;
+  .back-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+}
 
 
 #hamburger-check {
   display: none;
   + .hamburger {
+    z-index: 400;
     transition: 0.5s;
     .menu-trigger {
       cursor: pointer;
@@ -215,11 +262,11 @@ view more
       background-color: #1d3045;
       /*display: none;*/
       ul {
-        margin-top: 20vh;
+        margin-top: 14vh;
         li {
-          margin: 20px 0 20px 50px;
+          margin: 10px 0 20px 50px;
           width: 200px;
-          font-size: 2rem;
+          font-size: 1.8rem;
           a {
             color: white;}
         }
