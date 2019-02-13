@@ -18,7 +18,7 @@ body {
   color: white; }
 
 #loading {
-  z-index: 100;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,36 +42,21 @@ body {
     background: #ffffff; }
 
 .hamburger {
-  z-index: 1000;
+  cursor: pointer;
+  z-index: 300;
   position: fixed;
   top: 30px;
   left: 40px;
-  cursor: pointer;
-  height: 18px;
-  width: 32px; }
-  .hamburger span,
-  .hamburger span:before,
-  .hamburger span:after {
-    position: absolute;
-    height: 1px;
-    width: 32px;
-    border-radius: 3px;
-    background: #ffffff;
-    display: block;
-    content: ''; }
-  .hamburger span:before {
-    bottom: -10px; }
-  .hamburger span:after {
-    bottom: -20px; }
-  .hamburger p {
+  height: 22px;
+  /*p {
     width: 55px;
+    cursor: pointer;
     text-align: center;
     font-size: 0.75rem;
     position: relative;
     top: 35px;
-    left: -11.5px; }
-  .hamburger.is-open span {
-    opacity: 0; }
+    left: -11.5px;
+  }*/ }
 
 .main-container {
   position: relative;
@@ -95,7 +80,8 @@ body {
     transform: rotate(90deg); }
   .main-container .sub-title {
     position: absolute;
-    top: calc(50vh + 50px);
+    top: calc(50vh + 90px);
+    font-family: "BodoniSvtyTwoITCTT-Book",sans-serif;
     font-size: 3rem;
     width: 100%;
     text-align: center; }
@@ -131,7 +117,7 @@ body {
     color: #000; }
     .sub-container-text {
       position: relative;
-      z-index: 1000;
+      z-index: 100;
       width: calc(100vw);
       height: 50vh;
       padding: 3vw; }
@@ -186,7 +172,7 @@ body {
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 30000;
+  z-index: 3000;
   top: 0;
   padding: 5px;
   margin: -40px 10px;
