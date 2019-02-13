@@ -204,22 +204,24 @@ view more
       }
     }
     + .modal {
+      font-family: "Apple SD Gothic Neo",sans-serif;
       transition: 0.5s;
       z-index: 200;
       position: fixed;
       top: 0;
-      left: -300px;
-      width: 300px;
+      left: -250px;
+      width: 250px;
       height: 100vh;
-      color: white;
       background-color: #1d3045;
       /*display: none;*/
       ul {
-        margin-top: 10vh;
+        margin-top: 20vh;
         li {
           margin: 20px 0 20px 50px;
           width: 200px;
           font-size: 2rem;
+          a {
+            color: white;}
         }
       }
     }
@@ -227,7 +229,7 @@ view more
   &:checked {
     + .hamburger {
       height: 40px;
-      left: 230px;
+      left: 200px;
       .menu-trigger {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -254,6 +256,65 @@ view more
 
 
 
+.navigation {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  @media (--min-sm) {
+    flex-direction: row;
+  }
+}
+
+.menu > li {
+  @media (--min-sm) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.menu li a {
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+  color: #666;
+  transition: color .2s ease;
+
+  &:hover {
+    color: #aaa;
+
+    &::after,
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  &::before {
+    transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    background: rgb(146, 146, 146);
+  }
+
+  &::after {
+    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background: white;
+  }
+}
 
 
 

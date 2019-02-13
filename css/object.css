@@ -180,27 +180,29 @@ view more
         #hamburger-check + .hamburger .menu-trigger span:nth-of-type(3) {
           bottom: 10px; }
     #hamburger-check + .hamburger + .modal {
+      font-family: "Apple SD Gothic Neo",sans-serif;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
       z-index: 200;
       position: fixed;
       top: 0;
-      left: -300px;
-      width: 300px;
+      left: -250px;
+      width: 250px;
       height: 100vh;
-      color: white;
       background-color: #1d3045;
       /*display: none;*/ }
       #hamburger-check + .hamburger + .modal ul {
-        margin-top: 10vh; }
+        margin-top: 20vh; }
         #hamburger-check + .hamburger + .modal ul li {
           margin: 20px 0 20px 50px;
           width: 200px;
           font-size: 2rem; }
+          #hamburger-check + .hamburger + .modal ul li a {
+            color: white; }
   #hamburger-check:checked + .hamburger {
     height: 40px;
-    left: 230px; }
+    left: 200px; }
     #hamburger-check:checked + .hamburger .menu-trigger {
       -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
@@ -218,3 +220,58 @@ view more
     #hamburger-check:checked + .hamburger + .modal {
       left: 0;
       display: block; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (--min-sm) {
+    .menu {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+
+@media (--min-sm) {
+  .menu > li:not(:last-child) {
+    margin-right: 40px; } }
+
+.menu li a {
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+  color: #666;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease; }
+  .menu li a:hover {
+    color: #aaa; }
+    .menu li a:hover::after, .menu li a:hover::before {
+      width: 100%;
+      left: 0; }
+  .menu li a::after, .menu li a::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 0;
+    right: 0;
+    height: 3px; }
+  .menu li a::before {
+    -webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+    -o-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+    transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+    background: #929292; }
+  .menu li a::after {
+    -webkit-transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    -o-transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background: white; }
