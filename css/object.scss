@@ -1,23 +1,53 @@
+#loading {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  &-progress {
+    position: absolute;
+    top: calc(50vh + 80px);
+    left: calc(50vw - 77px);
+    width: 234px;
+    margin: 0 0 0 -40px;
+  }
+  &-percent {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    &-text {
+    }
+  }
+  &-gauge {
+    width: 0;
+    height: 5px;
+    background: #ffffff;
+  }
+}
+
 /*------
 　矢印
 ------*/
-.arrow3{
+.arrow3 {
   width: 10px;
-}
-.arrow3::before{
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 2px;
-  height: 50px;
-  background: #fff;
-}
-.arrow3::after{
-  content: "";
-  display:block;
-  border-top: 12px solid #fff;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  &:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 2px;
+    height: 30px;
+    background: #fff;
+  }
+  &:after {
+    content: "";
+    display:block;
+    border-top: 12px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
 }
 
 
@@ -31,41 +61,30 @@ snsボタン
 
 .button {
   cursor: pointer;
-  min-width: 150px;
-  max-width: 250px;
   display: block;
   margin: 1em;
-  padding: 1em 2em;
   border: none;
   background: none;
-  color: inherit;
   vertical-align: middle;
   position: relative;
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
+  width: 60px;
+  height: 60px;
+  min-width: 0;
+  padding: 0;
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  border-radius: 40px;
   &:focus {
     outline: none;
   }
   & > span {
     vertical-align: middle;
   }
-  &--round-l {
-    border-radius: 40px;
-  }
-  &.button--sacnite {
-    width: 70px;
-    height: 70px;
-    min-width: 0;
-    padding: 0;
-    color: #fff;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
-  }
-  &--sacnite.button--inverted {
-    color: #1DA1F2;
-  }
-  &--sacnite::before {
+  &:before {
     content: '';
     position: absolute;
     top: 0;
@@ -74,43 +93,23 @@ snsボタン
     height: 100%;
     border-radius: inherit;
     z-index: -1;
-    box-shadow: inset 0 0 0 35px #1DA1F2;
+    box-shadow: inset 0 0 0 35px #fff;
     -webkit-transform: scale3d(0.9, 0.9, 1);
     transform: scale3d(0.9, 0.9, 1);
-    -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3;
+    -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3s;
     transition: box-shadow 0.3s, transform 0.3s;
   }
-  &--sacnite.button--inverted::before {
-    box-shadow: inset 0 0 0 35px #fff;
+  i {
+    color: black;
   }
-  &--sacnite .button__icon {
-    font-size: 22px;
-    width: 22px;
+  &:hover {
+    &:before {
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+    i {
+      color: white;
+    }
   }
-  &--sacnite > span {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
-  &--sacnite:hover {
-    color: #1DA1F2;
-  }
-  &--sacnite.button--inverted:hover {
-    color: #fff;
-  }
-  &--sacnite:hover::before {
-    box-shadow: inset 0 0 0 2px #1DA1F2;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  &--sacnite.button--inverted:hover::before {
-    box-shadow: inset 0 0 0 2px #fff;
-  }
-
-}
-.bg-2 .button {
-  color: #ECEFF1;
-  border-color: #ECEFF1;
 }
 
 
@@ -121,7 +120,7 @@ view more
 .btn{
   width: 140px;
   height: 50px;
-  border:  1px solid #53546e;
+  border:  1px solid #12131d;
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
@@ -134,14 +133,14 @@ view more
     position: absolute;
     top: -50px;
     left: -190px;
-    background: #53546e;
+    background: #12131d;
     transition: all .5s ease;
     transform: rotateZ(-20deg);
     z-index: 1;
   }
   a {
     font-size: 1rem;
-    color: #53546e;
+    color: #12131d;
     line-height: 50px;
     transition: all 0.2s ease;
     z-index: 2;
@@ -155,6 +154,178 @@ view more
       color: #fff;
     }
   }
-
 }
+
+
+/*------
+ハンバーガー
+------*/
+
+.hamburger {
+  cursor: pointer;
+  z-index: 2000;
+  position: fixed;
+  top: 25px;
+  left: 40px;
+  height: 22px;
+  .back-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+
+#hamburger-check {
+  display: none;
+  + .hamburger {
+    z-index: 500;
+    transition: 0.5s;
+    .menu-trigger {
+      cursor: pointer;
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+      position: relative;
+      width: 25px;
+      height: 22px;
+      span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px;
+        &:nth-of-type(1) {
+          top: 0;
+        }
+        &:nth-of-type(2) {
+          top: 20px;
+        }
+        &:nth-of-type(3) {
+          bottom: 10px;
+        }
+      }
+    }
+    + .modal {
+      font-family: "Apple SD Gothic Neo",sans-serif;
+      transition: 0.5s;
+      z-index: 400;
+      position: fixed;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      height: 100vh;
+      background-color: #31334f;
+      ul {
+        margin-top: 14vh;
+        li {
+          padding: 10px 0 20px 50px;
+          width: 200px;
+          font-size: 1.8rem;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  &:checked {
+    + .hamburger {
+      height: 40px;
+      top: 15px;
+      + .modal {
+        left: 0;
+      }
+      .menu-trigger {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        span:nth-of-type(1) {
+          -webkit-transform: translateY(20px) rotate(-45deg);
+          transform: translateY(20px) rotate(-45deg);
+        }
+        span:nth-of-type(2) {
+          -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
+        }
+        span:nth-of-type(3) {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/*------
+ハンバーガー内メニュー
+------*/
+
+.navigation {
+  display: flex;
+}
+
+.menu {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+
+  @media (--min-sm) {
+    flex-direction: row;
+  }
+  & > li {
+    @media (--min-sm) {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+  & li a {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    color: #666;
+    transition: color .2s ease;
+
+    &:hover {
+      color: #aaa;
+
+      &::after,
+      &::before {
+        width: 100%;
+        left: 0;
+      }
+
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      width: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    &::before {
+      transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+      background: rgb(146, 146, 146);
+    }
+
+    &::after {
+      transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+      background: white;
+    }
+  }
+}
+
+
 
