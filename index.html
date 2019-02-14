@@ -1,190 +1,349 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE HTML>
+<html>
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Title</title>
-    <script src="js/common.js"></script>
-    <link href="//db.onlinewebfonts.com/c/8bc773512e829a52d207976b43c0ecca?family=Bodoni+SvtyTwo+ITC+TT" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SUPOTA｜スポーツ×トークンエコノミー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+    <meta name="keywords" content="スポーツビジネス,トークンエコノミー,スポーツ,仮想通貨,SUPOTA,河合佑真,VOLANTHERS" />
+    <meta name="author" content="@KawaiYuma8" />
+    <meta property="og:title" content="SUPOTA" />
+    <meta property="og:image" content="https://supota.github.io/images/logo.png" />
+    <meta property="og:url" content="https://www.supota.com/" />
+    <meta property="og:site_name" content="SUPOTA" />
+    <meta property="og:description" content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+    <meta name="twitter:title" content="SUPOTA" />
+    <meta name="twitter:image" content="https://supota.github.io/images/logo.png" />
+    <meta name="twitter:url" content="https://www.supota.com/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="css/animate.css">
+    <!--    <link rel="stylesheet" href="css/icomoon.css">-->
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/object.css">
+    <script src="//cdn.jsdelivr.net/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>
+        (function(i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+
+        ga("create", "UA-125713558-1", "auto");
+
+        InstantClick.on("change", function() {
+            ga("send", "pageview", location.pathname + location.search);
+        });
+
+        InstantClick.init(50);
+    </script>
 </head>
-<body>
-<!--
-<div id="loading">
-    <img class="logo" src="img/logo.png" alt="">
-    <div id="loading-progress">
-        <div id="loading-percent"><span id="loading-percent-text"></span>％</div>
-        <div id="loading-gauge"></div>
+
+<body oncontextmenu="return false">
+    <div class="fh5co-loader"></div>
+    <div id="page">
+
+
+        <header id="fh5co-header" class="fh5co-cover main-image" role="banner" data-stellar-background-ratio="0.7">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="display-t">
+                            <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                                <h1>SPORTS × TOKEN ECONOMY = <strong>SUPOTA</strong><br><br><strong>2018/12/5 10:00:00</strong><br>ALPHA VERSION DEBUT!
+                                </h1><br><br><br>
+<!--                                 <p><a href="https://alpha.supota.com" class="btn-primary btn-lg ">SUPOTA - α ver.</a></p> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="fh5co-services" class="fh5co-bg-section">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>
+                            SUPOTAって何?</h2>
+                        <p>SUPOTAとは、<br>自分の応援したいスポーツ選手を<strong>直接的に</strong>サポートできるサービスです。</p>
+                        <p><strong>「トークンエコノミー」</strong>を用いて、スポーツの課題を解決するサービスを提供します。</p>
+                        <p>私たちは、</p>
+                        <h3><strong>「全てのアスリートがもっと自由に活動できる環境づくり」</strong></h3>
+                        <p>を目指します。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="iphone">
+                            <img class="img-responsive" src="images/mock2.png" alt="iphone">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row services-inner">
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                                    <span class="icon">
+<!--		<i class="icon-image"></i>--><i>1.</i>
+								</span>
+                                    <h3>アスリートに時間を</h3>
+                                    <p>アスリートが自由にスポーツに取り組める時間を届けることができます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                                    <span class="icon">
+<!--									<i class="icon-laptop"></i>--><i>2.</i>
+								</span>
+                                    <h3>好きなスポーツ選手への応援を可視化</h3>
+                                    <p>あなたの応援するスポーツ選手の動向を確認することができます。</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                                    <span class="icon">
+<!--									<i class="icon-air-play"></i>-->
+                                        <i>3.</i>
+								</span>
+                                    <h3>自分が支援したい分だけ</h3>
+                                    <p>仮想通貨技術を用いることにより少額から支援することができます。</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--
+<div id="fh5co-project">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>登録している選手</h2>
+                <p>プロの選手からアマチュア選手まで、どなたでも登録することができます。<br>チームとしての登録も受け付けています。</p>
+            </div>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="col-forth">
+            <div class="project animate-box" style="background-image:url(images/kei_nishikori.jpg);">
+                <a href="#" class="desc">
+						<span>テニス</span>
+						<h3>錦織圭</h3>
+					</a>
+            </div>
+        </div>
+        <div class="col-forth">
+            <div class="project animate-box" style="background-image:url(images/ayumu-goroumaru.jpg);">
+                <a href="#" class="desc">
+						<span>ラグビー</span>
+						<h3>五郎丸歩</h3>
+					</a>
+            </div>
+        </div>
+        <div class="col-forth">
+            <div class="project animate-box" style="background-image:url(images/itiro.jpg);">
+                <a href="#" class="desc">
+						<span>野球</span>
+						<h3>イチロー</h3>
+					</a>
+            </div>
+        </div>
+        <div class="col-forth">
+            <div class="project animate-box" style="background-image:url(images/keisuke-neta.jpg);">
+                <a href="#" class="desc">
+							<span>サッカー</span>
+						<h3>ケイスケ ホンダ</h3>
+					</a>
+            </div>
+        </div>
     </div>
 </div>
 -->
-<input id="hamburger-check" type="checkbox">
-<label class="hamburger" for="hamburger-check">
-    <div class="menu-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</label>
-
-<div class="modal">
-    <ul class="menu">
-        <li><a href="#top" onclick="close_hamburger()">Top</a></li>
-        <li><a href="#vision" onclick="close_hamburger()">Vision</a></li>
-        <li><a href="#services" onclick="close_hamburger()">Services</a></li>
-        <li><a href="#contact" onclick="close_hamburger()">Contact</a></li>
-    </ul>
-</div>
-
-<div id="top" class="main-container">
-    <p class="copyright">©︎ 2019 SUPOTA Inc.</p>
-    <img class="logo" src="img/logo.png" alt="">
-    <p class="sub-title">Innovation in sports</p>
-    <div class="scroll">
-        <p class="scroll-text">SCROLL</p>
-        <div class="arrow3 scroll-arrow"></div>
-    </div>
-</div>
-<div class="header-back"></div>
-
-<div id="vision" class="sub">
-    <div class="section-ttl">Vision</div>
-    <div class="sub-container">
-        <div class="sub-container-text">
-            <h1 class="ttl">
-                <p><span>全てのアスリートが</span><span><br>本気でスポーツに取り組める社会へ</span></p>
-            </h1>
-            <p class="description"><span>私たちは、アスリートが自由に活動できる世界の実現を目指し活動しています。</span></p>
-            <div class="btn">
-                <div class="btn-back"></div>
-                <a href="https://docs.google.com/presentation/d/e/2PACX-1vRXbfIXw1iWSrfbd0XqlJs-uBxGOMHTNPS0zleHvvjJ5XmB5ehRGKAB3WVN9rHwHnSrBw_uDqkcI-Aj/pub?start=false&loop=false&delayms=3000&slide=id.p">View more</a>
+        <!--
+<div id="fh5co-testimonial" class="fh5co-bg-section">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>ユーザーからの声</h2>
             </div>
         </div>
-
-        <div class="sub-container-content">
-            <img src="img/content1.jpg" alt="">
-        </div>
-    </div>
-</div>
-
-<div id="services" class="sub">
-    <div class="section-ttl">Services</div>
-    <div class="sub-container flex-reverse">
-        <div class="sub-container-text">
-            <h1 class="ttl">
-                <p><span>トークンエコノミーを利用した</span><span><br>アスリートを応援する事ができるSNS</span></p>
-            </h1>
-            <p class="description">
-                <span>自分の応援したいスポーツ選手を直接的にサポートできるサービスです</span>
-            </p>
-            <div class="btn">
-                <div class="btn-back"></div>
-                <a href="#">View more</a>
-            </div>
-        </div>
-
-        <div class="sub-container-content">
-            <img src="img/service.png" alt="" style="width: 100%;">
-        </div>
-    </div>
-</div>
-<div id="contact" class="sub">
-    <div class="section-ttl">Contact</div>
-    <div class="sub-container">
-        <div class="sub-container-text">
-            <h1 class="ttl">
-                <p><span>トークンエコノミーを利用した</span><span><br>アスリートを応援する事ができるSNS</span></p>
-            </h1>
-            <p class="description">
-                <span>イベント・サービス内の広告依頼・ご質問など、お気軽にお問い合わせください。</span>
-            </p>
-            <div class="btn">
-                <div class="btn-back"></div>
-                <a href="#">View more</a>
-            </div>
-        </div>
-
-        <div class="sub-container-content">
-            <img src="img/content1.jpg" alt="">
-        </div>
-    </div>
-</div>
-
-
-
-<footer class="footer">
-    <div class="footer-ttl">
-        <div class="footer-ttl-supota">
-            <img src="img/logo.png" alt="">
-            <h1>SUPOTA</h1>
-        </div>
-        <ul>
-            <li><p>〒530-0022</p></li>
-            <li><p>大阪市北区浪花町13-38 千代田ビル北館7階</p></li>
-            <li><p>TEL.06-6110-5301　FAX.06-6110-5302</p></li>
-        </ul>
-        <div class="container">
-            <section class="content">
-                <div class="box bg-2">
-                    <button class="button button--sacnite"><i class="fab fa-twitter fa-2x"></i></button>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row animate-box">
+                    <div class="owl-carousel owl-carousel-fullwidth">
+                        <div class="item">
+                            <div class="testimony-slide active text-center">
+                                <figure>
+                                    <img src="images/person_1.jpg" alt="user">
+                                </figure>
+                                <span>人物名</span>
+                                <blockquote>
+                                    <p>&ldquo;ここに本文を入力&rdquo;</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-slide active text-center">
+                                <figure>
+                                    <img src="images/person_2.jpg" alt="user">
+                                </figure>
+                                <span>人物名</span>
+                                <blockquote>
+                                    <p>&ldquo;ここに本文を入力&rdquo;</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-slide active text-center">
+                                <figure>
+                                    <img src="images/person_3.jpg" alt="user">
+                                </figure>
+                                <span>人物名</span>
+                                <blockquote>
+                                    <p>&ldquo;ここに本文を入力&rdquo;</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
-</footer>
+</div>
+-->
 
-<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <!-- 1030行目で色変更-->
+        <div id="fh5co-started">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>SUPOTAはまだ開発段階です。</h2>
+                        <p>正式リリースは2019年初旬を予定しています。<br>最新情報を受け取りたい方は、こちらから登録をお願いします。</p>
+                    </div>
+                </div>
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vRXbfIXw1iWSrfbd0XqlJs-uBxGOMHTNPS0zleHvvjJ5XmB5ehRGKAB3WVN9rHwHnSrBw_uDqkcI-Aj/pub?start=false&loop=false&delayms=3000" class="btn btn-default btn-lg">企画書をみる</a></p>
+                        <p><a href="https://goo.gl/forms/YfJCKCMSlW8o4iUo2" class="btn btn-default btn-lg">お問い合わせをする</a></p>
 
-<script type="text/javascript">
-    var images = document.getElementsByTagName('div'); // ページ内の画像取得
-    var loading = document.getElementById('loading'); // ローディング全体
-    var percent = document.getElementById('loading-percent-text'); // パーセントのテキスト部分
-    var gauge = document.getElementById('loading-gauge'); // ゲージ
-    var imgCount = 0;
-    var baseCount = 0;
-    var gaugeMax = 234; // ゲージの幅指定
-    var current;
+                    </div>
+                </div>
 
-    // 画像の読み込み
-    for (var i = 0; i < images.length; i++) {
-        var img = new Image(); // 画像の作成
-        // 画像読み込み完了したとき
-        img.onload = function() {
-            imgCount += 1;
-        };
-        // 画像読み込み失敗したとき
-        img.onerror = function() {
-            imgCount += 1;
-        };
-        img.src = images[i].src; // 画像にsrcを指定して読み込み開始
-    }
 
-    /*
-    // ローディング処理
-    var nowLoading = setInterval(function() {
-        if(baseCount <= imgCount) { // baseCountがimgCountを追い抜かないようにする
-            // 現在の読み込み具合のパーセントを取得
-            current = Math.floor(baseCount / images.length * 100);
-            // パーセント表示の書き換え
-            percent.innerHTML = current;
-            // ゲージの変更
-            gauge.style.width = Math.floor(gaugeMax / 100 * current) + 'px';
-            baseCount += 1;
-            // 全て読み込んだ時
-            if(baseCount == images.length) {
-                // ローディング要素の非表示
-                loading.style.display = 'none';
-                // ローディングの終了
-                clearInterval(nowLoading);
-            }
-        }
-    }, 40); */
-    function close_hamburger() {
-        document.getElementById("hamburger-check").checked = false;
-    }
-</script>
+            </div>
+        </div>
+
+        <footer id="fh5co-footer" role="contentinfo">
+            <div class="container">
+                <!--
+<div class="row row-pb-md">
+    <div class="col-md-4 fh5co-widget">
+        <h3>ここにテキストが入ります。</h3>
+        <p>ここにテキストが入ります。</p>
+        <p><a class="btn btn-primary btn-outline with-arrow" href="#">ここがボタンテキストです。<i class="icon-arrow-right"></i></a></p>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+        <ul class="fh5co-footer-links">
+            <li><a href="#">項目1 左</a></li>
+            <li><a href="#">項目2 左</a></li>
+            <li><a href="#">項目3 左</a></li>
+            <li><a href="#">項目4 左</a></li>
+            <li><a href="#">項目5 左</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+        <ul class="fh5co-footer-links">
+            <li><a href="#">項目1 右</a></li>
+            <li><a href="#">項目2 右</a></li>
+            <li><a href="#">項目3 右</a></li>
+            <li><a href="#">項目4 右</a></li>
+            <li><a href="#">項目5 右</a></li>
+        </ul>
+    </div>
+
+
+    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+        <ul class="fh5co-footer-links">
+            <li><a href="#">Find Designers</a></li>
+            <li><a href="#">Find Developers</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">API</a></li>
+        </ul>
+    </div>
+
+</div>
+-->
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; 2018 <a href="/">SUPOTA</a> . All Rights Reserved.</small>
+                        </p>
+                        <!--
+<ul class="fh5co-social-icons">
+    <li><a href="#"><i class="icon-twitter"></i></a></li>
+    <li><a href="#"><i class="icon-facebook"></i></a></li>
+    <li><a href="#"><i class="icon-instagram"></i></a></li>
+
+</ul>
+-->
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop">
+            <!--            <i class="icon-arrow-up"></i>-->
+            <i>⬆︎</i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <!--    <script src="js/jquery.easing.1.3.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/vendor/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <!--    <script src="js/bootstrap.min.js"></script>-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- Stellar Parallax -->
+    <!--    <script src="js/jquery.stellar.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.stellar@0.6.2/jquery.stellar.js"></script>
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
