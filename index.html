@@ -32,15 +32,14 @@
 
 <div class="modal">
     <ul class="menu">
-        <li><a href="#">Top</a></li>
-        <li><a href="#">Vision</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Member</a></li>
-        <li><a href="#">Products</a></li>
+        <li><a href="#top" onclick="close_hamburger()">Top</a></li>
+        <li><a href="#vision" onclick="close_hamburger()">Vision</a></li>
+        <li><a href="#services" onclick="close_hamburger()">Services</a></li>
+        <li><a href="#contact" onclick="close_hamburger()">Contact</a></li>
     </ul>
 </div>
 
-<div class="main-container">
+<div id="top" class="main-container">
     <p class="copyright">©︎ 2019 SUPOTA Inc.</p>
     <img class="logo" src="img/logo.png" alt="">
     <p class="sub-title">Innovation in sports</p>
@@ -51,35 +50,35 @@
 </div>
 <div class="header-back"></div>
 
-<div class="sub">
+<div id="vision" class="sub">
     <div class="section-ttl">Vision</div>
     <div class="sub-container">
         <div class="sub-container-text">
             <h1 class="ttl">
-                <p>全てのアスリートが<br>本気でスポーツに取り組める社会へ。</p>
+                <p><span>全てのアスリートが</span><span><br>本気でスポーツに取り組める社会へ</span></p>
             </h1>
-            <p class="description">
-                私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。
-            </p>
+            <p class="description"><span>私たちは、アスリートが自由に活動できる世界の実現を目指し活動しています。</span></p>
             <div class="btn">
                 <div class="btn-back"></div>
                 <a href="#">View more</a>
             </div>
         </div>
 
-        <div class="sub-container-content"></div>
+        <div class="sub-container-content">
+            <img src="img/content1.jpg" alt="">
+        </div>
     </div>
 </div>
 
-<div class="sub">
+<div id="services" class="sub">
     <div class="section-ttl">Services</div>
     <div class="sub-container flex-reverse">
         <div class="sub-container-text">
             <h1 class="ttl">
-                <p>トークンエコノミーを利用した<br>アスリートを応援する事ができるSNS</p>
+                <p><span>トークンエコノミーを利用した</span><span><br>アスリートを応援する事ができるSNS</span></p>
             </h1>
             <p class="description">
-                私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。
+                <span>アスリートが自由に活躍することができるように支援することができます</span>
             </p>
             <div class="btn">
                 <div class="btn-back"></div>
@@ -87,11 +86,13 @@
             </div>
         </div>
 
-        <div class="sub-container-content"></div>
+        <div class="sub-container-content">
+            <img src="img/service.png" alt="" style="width: 100%;">
+        </div>
     </div>
 </div>
 <!--
-<div class="sub">
+rviv class="sub">
     <div class="section-ttl">Member</div>
     <div class="sub-container">
         <ul class="member">
@@ -120,15 +121,15 @@
     </div>
 </div>
 -->
-<div class="sub">
+<div id="contact" class="sub">
     <div class="section-ttl">Contact</div>
-    <div class="sub-container">
+    <div class="sub-container flex-reverse">
         <div class="sub-container-text">
             <h1 class="ttl">
-                <p>トークンエコノミーを利用した<br>アスリートを応援する事ができるSNS</p>
+                <p><span>トークンエコノミーを利用した</span><span><br>アスリートを応援する事ができるSNS</span></p>
             </h1>
             <p class="description">
-                私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。
+                <span>私たちはアスリートが自由に活動できる世界の実現を目指し、活動しています。</span>
             </p>
             <div class="btn">
                 <div class="btn-back"></div>
@@ -136,7 +137,9 @@
             </div>
         </div>
 
-        <div class="sub-container-content"></div>
+        <div class="sub-container-content">
+            <img src="img/content1.jpg" alt="">
+        </div>
     </div>
 </div>
 
@@ -156,7 +159,7 @@
         <div class="container">
             <section class="content">
                 <div class="box bg-2">
-                    <button class="button button--sacnite button--round-l"><i class="fab fa-twitter fa-2x"></i></button>
+                    <button class="button button--sacnite"><i class="fab fa-twitter fa-2x"></i></button>
                 </div>
             </section>
         </div>
@@ -209,12 +212,9 @@
             }
         }
     }, 40); */
-</script>
-<script>
-    document.getElementById("button").onclick = function() {
-        // ここに#buttonをクリックしたら発生させる処理を記述する
-    };
-
+    function close_hamburger() {
+        document.getElementById("hamburger-check").checked = false;
+    }
 </script>
 </body>
 </html>

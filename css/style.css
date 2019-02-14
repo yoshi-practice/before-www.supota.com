@@ -89,6 +89,9 @@ body {
       width: calc(100vw);
       height: 50vh;
       padding: 3vw; }
+      .sub-container-text span {
+        padding: 0 5px 0 0;
+        background-color: white; }
       .sub-container-text .ttl {
         position: relative;
         margin: 100px 0 30px 0;
@@ -102,10 +105,12 @@ body {
       top: 120px;
       right: 3vw;
       margin: 0 0 0 3vw;
-      width: calc(60vw - 6vw);
+      width: calc(55vw - 6vw);
       min-width: 400px;
-      height: 50vh;
-      background-color: #9e9e9e; }
+      height: 50vh; }
+      .sub-container-content img {
+        width: 80vw;
+        min-width: 500px; }
     .sub-container .member {
       width: 100%;
       margin-top: 140px;
